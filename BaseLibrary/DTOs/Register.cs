@@ -12,5 +12,5 @@ public class Register : AccountBase
     [DataType(DataType.Password)]
     [Compare(nameof(Password))]
     [Required]
-    public string? ConfirmPasswor { get; set; }
+    public string? ConfirmPassword { get; set; }
 }

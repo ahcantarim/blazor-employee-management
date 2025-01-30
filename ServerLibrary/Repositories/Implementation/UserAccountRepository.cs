@@ -159,7 +159,7 @@ public sealed class UserAccountRepository(IOptions<JwtSection> config, AppDbCont
             issuer: jwtSection.Issuer,
             audience: jwtSection.Audience,
             claims: userClaims,
-            expires: DateTime.Now.AddDays(1),
+            expires: DateTime.Now.AddSeconds(2),
             signingCredentials: credentials
         );
 
